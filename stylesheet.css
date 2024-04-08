@@ -1,7 +1,8 @@
 /* Seleziona il contenitore del contatore */
 .container {
   display: flex;
-  justify-content: center;
+  background-color: gold;
+  justify-content: left;
   align-items: center;
   margin: 20px auto;
   width: 200px;
