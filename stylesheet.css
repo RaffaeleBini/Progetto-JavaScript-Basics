@@ -1,4 +1,4 @@
-* {
+betwee* {
   font-family: glory;
   }
 
@@ -21,7 +21,7 @@ h1 {
 /* Seleziona il contenitore del contatore */
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 20px auto;
   width: 200px;
