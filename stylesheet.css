@@ -1,3 +1,14 @@
+.body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: black;
+}
+
 /* Seleziona il contenitore del contatore */
 .container {
   display: flex;
@@ -32,7 +43,7 @@
 
 /* Seleziona il valore del contatore */
 #contatore {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
