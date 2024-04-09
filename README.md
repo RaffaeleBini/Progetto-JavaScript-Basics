@@ -2,7 +2,6 @@
 ![Logo](https://www.raffaelebini.com/assets/img/LogoRBScuroPiccolo.png)
 
 
-## Badges
 
 
 
