@@ -1,4 +1,4 @@
-.body {
+body {
   width: 100%;
   height: 100%;
   font-size: 16px;
@@ -6,7 +6,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background-color: black;
+  background-color: #d2d2d2;
 }
 
 /* Seleziona il contenitore del contatore */
