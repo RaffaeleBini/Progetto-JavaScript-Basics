@@ -13,6 +13,12 @@
 
 A simple JavaScript application that allows the user to increase and decrease the value of a counter.
 
+## Link
+
+[Click here to use the Counter](https://www.raffaelebini.com/progetti/index.html)
+
+
+
 
 ## Usage
 
