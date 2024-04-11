@@ -27,7 +27,7 @@ The user, upon entering the page, will display 0 as the counter value and will h
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](/img/CounterScreen.png)
 
 
 ## License
