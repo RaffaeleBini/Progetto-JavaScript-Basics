@@ -7,7 +7,7 @@ let counter = 0;
 
 // Function to update the counter value
 function updateCounter() {
-  contatoreElement.textContent = counter;
+  counterElement.textContent = counter;
 }
 
 // Function to increase the counter value
@@ -24,7 +24,7 @@ const resetButton = document.getElementById("reset");
 // Function to reset the counter value
 function reset() {
   counter = 0;
-  aggiornaCounter();
+  updateCounter();
 }
 // Function to decrease the counter value
 function decrease() {
