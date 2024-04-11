@@ -1,44 +1,38 @@
 const container = document.querySelector(".container");
-const decrementaButton = document.getElementById("decrementa");
-const contatoreElement = document.getElementById("contatore");
-const incrementaButton = document.getElementById("incrementa");
+const decreaseButton = document.getElementById("decrease");
+const counterElement = document.getElementById("counter");
+const increaseButton = document.getElementById("increase");
 
-let contatore = 0;
+let counter = 0;
 
-// Funzione per aggiornare il valore del contatore
-function aggiornaContatore() {
-  contatoreElement.textContent = contatore;
+// Function to update the counter value
+function updateCounter() {
+  contatoreElement.textContent = counter;
 }
 
-// Funzione per incrementare il contatore
-function incrementa() {
-  contatore++;
-  aggiornaContatore();
+// Function to increase the counter value
+function increase() {
+  counter++;
+  updateCounter();
 }
 
-// Funzione per decrementare il contatore
-function decrementa() {
-  contatore--;
-  aggiornaContatore();
+// Update counter on page loading
+updateCounter();
+
+const resetButton = document.getElementById("reset");
+
+// Function to reset the counter value
+function reset() {
+  counter = 0;
+  aggiornaCounter();
+}
+// Function to decrease the counter value
+function decrease() {
+  counter--;
+  updateCounter();
 }
 
-// Aggiunta degli eventi click ai pulsanti
-incrementaButton.addEventListener("click", incrementa);
-decrementaButton.addEventListener("click", decrementa);
-
-
-// Aggiornamento del contatore al caricamento della pagina
-aggiornaContatore();
-
-const azzeraButton = document.getElementById("azzera");
-
-// Funzione per azzerare il contatore
-function azzera() {
-  contatore = 0;
-  aggiornaContatore();
-  disabilitaDecrementa();
-  abilitaIncrementa();
-}
-
-// Aggiunta dell'evento click al pulsante
-azzeraButton.addEventListener("click", azzera);
+// Add click events to buttons
+increaseButton.addEventListener("click", increase);
+decreaseButton.addEventListener("click", decrease);
+resetButton.addEventListener("click", reset);
