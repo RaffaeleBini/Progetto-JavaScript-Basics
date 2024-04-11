@@ -2,6 +2,7 @@ const container = document.querySelector(".container");
 const decreaseButton = document.getElementById("decrease");
 const counterElement = document.getElementById("counter");
 const increaseButton = document.getElementById("increase");
+const resetButton = document.getElementById("reset");
 
 let counter = 0;
 
@@ -16,21 +17,20 @@ function increase() {
   updateCounter();
 }
 
-// Update counter on page loading
-updateCounter();
-
-const resetButton = document.getElementById("reset");
-
 // Function to reset the counter value
 function reset() {
   counter = 0;
   updateCounter();
 }
+
 // Function to decrease the counter value
 function decrease() {
   counter--;
   updateCounter();
 }
+
+// Update counter on page loading
+updateCounter();
 
 // Add click events to buttons
 increaseButton.addEventListener("click", increase);
