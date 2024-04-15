@@ -29,10 +29,10 @@ function decrease() {
   updateCounter();
 }
 
-// Update counter on page loading
-updateCounter();
-
 // Add click events to buttons
 increaseButton.addEventListener("click", increase);
 decreaseButton.addEventListener("click", decrease);
 resetButton.addEventListener("click", reset);
+
+// Update counter on page loading
+updateCounter();
