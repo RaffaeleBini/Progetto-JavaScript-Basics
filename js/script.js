@@ -1,4 +1,4 @@
-// Create the HTML elements
+  // Create the HTML elements
   const decrementBtn = document.createElement('button');
   decrementBtn.id = 'decrement';
   decrementBtn.textContent = '-';
@@ -11,12 +11,15 @@
   incrementBtn.id = 'increment';
   incrementBtn.textContent = '+';
 
-// Add elements to the DOM
-  document.body.appendChild(decrementBtn);
-  document.body.appendChild(counterSpan);
-  document.body.appendChild(incrementBtn);
+  // Select the destination div
+  const containerDiv = document.querySelector('.container');
 
-// Select the elements in the DOM
+  // Append the Buttons to the DOM
+  containerDiv.appendChild(incrementBtn);
+  containerDiv.appendChild(decrementBtn);
+  containerDiv.appendChild(counterSpan);
+
+  // Select the elements in the DOM
   const counterDisplay = document.getElementById('counter');
   const incrementButton = document.getElementById('increment');
   const decrementButton = document.getElementById('decrement');
