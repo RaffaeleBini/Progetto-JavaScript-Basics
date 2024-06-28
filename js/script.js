@@ -1,23 +1,16 @@
   // Create the HTML elements
-  const decrementBtn = document.createElement('button');
-  decrementBtn.id = 'decrement';
-  decrementBtn.textContent = '-';
+  const counter = document.createElement('div');
+  counter.innerHTML = `<h1>COUNTER</h1>
+  <div style="text-align: center;"><img src="img/counter.png" alt="Counter"></div>
+  <div class="container">
+      <button id="decrement">-</button>
+      <span id="counter">0</span>
+      <button id="increment">+</button>
+      <br>
+      <button id="reset">RESET</button>
+  </div>`;
 
-  const counterSpan = document.createElement('span');
-  counterSpan.id = 'counter';
-  counterSpan.textContent = '0';
-
-  const incrementBtn = document.createElement('button');
-  incrementBtn.id = 'increment';
-  incrementBtn.textContent = '+';
-
-  // Select the destination div
-  const containerDiv = document.querySelector('.container');
-
-  // Append the Buttons to the DOM
-  containerDiv.appendChild(incrementBtn);
-  containerDiv.appendChild(decrementBtn);
-  containerDiv.appendChild(counterSpan);
+  document.body.appendChild(counter);
 
   // Select the elements in the DOM
   const counterDisplay = document.getElementById('counter');
