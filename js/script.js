@@ -1,3 +1,21 @@
+// Create the HTML elements
+  const decrementBtn = document.createElement('button');
+  decrementBtn.id = 'decrement';
+  decrementBtn.textContent = '-';
+
+  const counterSpan = document.createElement('span');
+  counterSpan.id = 'counter';
+  counterSpan.textContent = '0';
+
+  const incrementBtn = document.createElement('button');
+  incrementBtn.id = 'increment';
+  incrementBtn.textContent = '+';
+
+// Add elements to the DOM
+  document.body.appendChild(decrementBtn);
+  document.body.appendChild(counterSpan);
+  document.body.appendChild(incrementBtn);
+
 // Select the elements in the DOM
   const counterDisplay = document.getElementById('counter');
   const incrementButton = document.getElementById('increment');
