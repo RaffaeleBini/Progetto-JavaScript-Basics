@@ -1,38 +1,33 @@
-const container = document.querySelector(".container");
-const decreaseButton = document.getElementById("decrease");
-const counterElement = document.getElementById("counter");
-const increaseButton = document.getElementById("increase");
-const resetButton = document.getElementById("reset");
+// Select the elements in the DOM
+  const counterDisplay = document.getElementById('counter');
+  const incrementButton = document.getElementById('increment');
+  const decrementButton = document.getElementById('decrement');
+  const resetButton = document.getElementById('reset');
 
-let counter = 0;
+  // Inizialise the value of the counter
+  let counterValue = 0;
 
-// Function to update the counter value
-function updateCounter() {
-  counterElement.textContent = counter;
-}
+  // Update the display of the counter
+  const updateDisplay = () => {
+    counterDisplay.textContent = counterValue;
+  };
 
-// Function to increase the counter value
-function increase() {
-  counter++;
-  updateCounter();
-}
+  // Enable the functions of the buttons
+  incrementButton.addEventListener('click', () => {
+    counterValue++;
+    updateDisplay();
+  });
 
-// Function to reset the counter value
-function reset() {
-  counter = 0;
-  updateCounter();
-}
+  decrementButton.addEventListener('click', () => {
+    counterValue--;
+    updateDisplay();
+  });
 
-// Function to decrease the counter value
-function decrease() {
-  counter--;
-  updateCounter();
-}
+  // Add the reset function
+  resetButton.addEventListener('click', () => {
+    counterValue = 0;
+    updateDisplay();
+  });
 
-// Add click events to buttons
-increaseButton.addEventListener("click", increase);
-decreaseButton.addEventListener("click", decrease);
-resetButton.addEventListener("click", reset);
-
-// Update counter on page loading
-updateCounter();
+  // Update the display
+  updateDisplay();
